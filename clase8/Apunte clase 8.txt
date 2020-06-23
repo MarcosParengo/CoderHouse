@@ -1,0 +1,27 @@
+
+DOM: Objeto creado a a partir del html (Interpretable en JS)
+
+	getElementById("") //id fijado en el html:
+	 <input type="text" id="searchTextInput" value="Hola Mundo"/>
+
+	getElementsByClassName(*) // 
+	
+	<section class="search-box">
+        <form>
+            <div class="grid">
+                <div class="col-10-12">
+                    <input type="text" id="searchTextInput" value="Hola Mundo"/>
+                </div>
+                <div class="col-2-12">
+                    <input type="button" value="Buscar" class="btn -primary -block" />
+                </div>
+            </div>
+        </form>
+    </section>
+
+	getElementsByTagName() // Lo mismo pero con el tag
+
+	Cargar el script en html: (En el header)
+				<script defer src='assets/scripts/main.js'></script>//Defer hace que se espere a que el html este cargado para que ejecute el script
+
+	Desde JS: window.onload= function(){} // Se ejecuta recien cuando esta cargado

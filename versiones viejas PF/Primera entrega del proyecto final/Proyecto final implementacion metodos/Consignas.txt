@@ -1,0 +1,6 @@
+A partir de los ejemplos mostrados la primera clase, deberás:
+
+Pensar el alcance de tu proyecto: ¿usarás un cotizador de seguros? ¿un simulador de créditos? ¿un simulador personalizado?
+Armar la estructura HTML del proyecto.
+Incorporar al menos un prompt para pedir un dato y luego mostrarlo mediante alert realizando alguna operación.
+Utilizar funciones para realizar esas operaciones

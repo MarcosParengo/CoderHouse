@@ -1,0 +1,19 @@
+
+Funciones con parametros: 
+
+	var number1;
+	var number2;
+	var res;
+
+	function sumNumbers(number1, number2){
+
+	var number1 = number1 || 0;
+	var number2 = number2 || 0;//si no le llega un valor como parametro toma el valor despues de ||
+	//number1 = prompt("ingrese el primer numero");	
+	//number2 = prompt("ingrese el segundo numero");
+
+	return parseInt(number1)+parseInt(number2);
+	}
+
+	res = sumNumbers(23); // number1 toma el valor de 12, number2 toma el valor de 23
+	console.log(res);

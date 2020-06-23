@@ -1,0 +1,57 @@
+String (metodos): Se usan de la forma string.metodo (String es el nombre de la variable)
+	-length // Cuantos caracteres tiene
+	-toUpperCase // Devuelve el string pero en mayúsculas
+	-toLowerCase //	Devuelve el string pero en minúsculas
+	-split("&")// divide el string con el caracter entre comillas y los pone en un array
+	myString= "hola mundo."
+	console.log(myString.split(" ")
+	expected output : ["hola", "mundo"]
+	-replace("1","2") //  reemplaza el primer 1 del string por 2
+	-trim // (elimina los espacios del pricipio y del final)
+	myString= " hola mundo. "
+	console.log(myString.split(" ")
+	expected output : "hola mundo"
+Arrays :
+	-se definen de la forma 
+	var array1 = [] // Vacio
+	var array1 = ["elemento 0", "elemento 1", "elemento 2"] // lista con elementos
+	-Metodos:Se usan de la forma array.metodo (array es el nombre de la variable):
+		-length // cantidad de elementos del array
+		-array[x] // tiene como salida el valor de la posicion "x" del array (donde x es un numero)
+		-push(x) // agrega "x" al final del array
+		-join(", ") // devuelve un string con todos los elementos separado por lo que hay entre parentesis
+		-array1.concat.(array2) // añade todos los elementos del array 2 al final del array1
+		-forEach // funcion repetitiva 
+		array1 = ["elemento1", "elemento2", "elemento3"]
+		array1.forEach//se repite la funcion segun cuantos elementos tenga, en este caso 3
+		(function(item, i){//item es el valor del elemento que corresponde a la vuelta
+		console.log(item+" se encuentra en la posicion "+ (i+1))
+		})
+
+-----------------------------------------------------------------------------------------------------------------------
+	
+	function ShoppingCart() {
+	var cart = [];
+	this.add = function(product) {
+		cart.push(product);
+	}
+	this.get = function() {
+		return cart;
+	}
+	}
+	function Product(id, name, price, description) {
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.description = description;
+	}
+	var product1 = new Product(1,"playstation", 40000, "description");
+	var product2 = new Product(2,"iphone", 400000, "description");
+	var myShoppingCart = new ShoppingCart();
+	myShoppingCart.add(product1);
+	myShoppingCart.add(product1);
+	myShoppingCart.add(product2);
+	var contentShoppingCart = myShoppingCart.get();
+	contentShoppingCart.forEach(function(item, i){
+		console.log(item.name);
+	});

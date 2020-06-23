@@ -1,0 +1,32 @@
+Frontend ----> HTML,CSS,JS (Cliente) 
+Backend ----> PHP,Python,GO,JAVA (Server) Node---> traslada JS a backend (Formas mas habituales de fullstack)
+
+ECMAScript es una especificación de lenguaje de programación que prentende establecer un standar (Se evita el CrossBrowser)
+Buenos hábitos:
+
+	-Nombre de variables en inglés.
+	-Linters
+	-Nombres de variables descriptivos, no usar palabras reservadas y no empezar con números
+	-snake_case (guiones_bajos_entre_las_palabras), lowerCamelCase (cadaInicialEnMayusculaMenosLaDeLaPrimeraVariable)
+
+Metodos:
+
+	-Console.log('*') ;//sacar iformación por la consola *Un string, puede ir una variable
+	-val * = ! ;// * = nombre; ! = valor
+	-alert ;//se muestra al usuario sin abrir la consola
+	-var * = prompt('!'); // input , * = nombre, ! = etiqueta, guarda la informacion en strings, aunque se ingresen valores numericos
+	-var * = typeof(!); // tipo de variable, * = nombre, ! = variable de la que quiero saber el tipo
+	-var *= parseInt(!)/ Number(!); // pasar un String a number/int, * = nombre de variable en la que se guarda el valor en int, variable a convertir
+
+Tipos de datos (Se hace automáticamente):
+
+	-number // cadena de numeros (Únicamente)
+	-string // cadena de caracteres (Alfa Numérico)
+
+Suma y concatenación: 
+	
+	Se ejecuta con un "+", el browser interpreta automaticamente si suma o concatena segun el tipo de dato (Si todas las variables involucradas son numeros se suma, si al menos una es un string se concatenan)
+	
+
+
+

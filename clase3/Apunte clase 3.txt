@@ -1,0 +1,102 @@
+	Funciones repetitivas (Bucles):
+
+-For:
+
+	for(var i = *, i < &, i++){
+		//	1er param = valor inicial de la variable de la que depende el for.
+		//	2do param = condicion que se debe cumplir para que mantenerse en la funcion.
+		// 3er param = Accion que se realiza al terminar un ciclo.
+		if(quieroquesesaltee){
+		continue; //corta la vuelta, ejecuta el 3er param y pasa a la siguiente vuelta(No ejecuta todo lo que sigue)
+		} 
+		if(quieroqueserompa){
+		break; //Rompe el ciclo sin importar la si se sigue cumpliendo el 2do parametro
+		} 
+	} 
+
+-While:
+
+	var i = *; // valor inicial de la variable de la que depende el for.
+	while( i > & ){ // condicion que se debe cumplir para que mantenerse en la funcion.
+		i++ // Accion que se realiza al terminar un ciclo
+
+		if(quieroqueserompa){
+		break; //Rompe el ciclo sin importar la si se sigue cumpliendo el 2do parametro
+		} 	
+
+	}
+
+-Switch:
+	var variableDeLaQueDepende;
+	switch (variableDeLaQueDepende){
+		case 0:
+			//accion a realizar cuando variableDeLaQueDepende tenga valor 0 
+			break;
+
+		case 1:
+			//accion a realizar cuando variableDeLaQueDepende tenga valor 1
+			break;
+	}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+	Funciones: //Conjunto de acciones definidas, que al llamarlas son ejecutadas.
+
+	function sumNumbers(){
+    number1 = prompt("ingrese el primer numero");	|<-----------|
+    number2 = prompt("ingrese el segundo numero");	|			 |
+    res = parseInt(number1) + parseInt(number2);	v|------------------| la funcion sale de la pila de ejecucion y vuelve a la linea que seguia, la que venia en la pila despues de la linea en la que se llamo a la funcion.
+}																 |		|
+sumNumbers(); //se ejecuta y se va a la funcion-------------------		|
+																		|		
+					vuelve a esta linea<--------------------------------| cambia la pila de ejecucion, el contenido de la funcion es metido en la pila y se lo pone como maxima prioridad
+	
+	!!CallStack es el metodo que se encarga de como fluye el programa.(Todas las lineas extrañas esas)
+
+	ArrowFunctions: // Tres formas nuevas de definir funciones
+
+		var greeting = () => {
+		console.log('Hola mundo');
+		}
+
+		var greeting = msg => {
+		console.log(msg);
+		}
+
+		var greeting = msg => console.log(msg);
+
+----------------------------------------------------------------------------------------------------------------------------
+
+	Tipos de funciones simples:
+		Recursiva: //una funcion que se llama a si misma 
+
+		Con efecto: //una funcion que ejecuta acciones con un efecto directo y no retornan ningun valor
+			
+			function showNumber() {
+   				console.log(5);
+			}
+			showNumber();
+
+		Con retorno: //una funcion que retorna un valor sin producir ninguna otra acción
+
+			function getNumber() {
+  				 return 4;
+			}
+			console.log(getNumber());// Se imprime el valor que retorna la funcion
+			var number1(getNumber());// Se guarda el valor que retorna la funcion en esta variable
+
+		Puras: //devuelven siempre el mismo valor.	
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+	 
+
+----------------------------------------------------------------------------------------------------------------------------
+	
+	Buenas practicas:
+	
+-( resultado = resultado+i ) = ( resultado += i )
+
+----------------------------------------------------------------------------------------------------------------------------

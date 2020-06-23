@@ -1,0 +1,3 @@
+1- Pedir nombre mediante prompt y mostrarlo en consola junto con algún texto de saludo. Ej: Hola Juan!
+2- Pedir un número mediante prompt, parsearlo, sumarlo a otro que se encuentre almacenado en una variable y luego mostrar el resultado en consola.
+3- Pedir un texto mediante prompt, luego otro, concatenarlos y mostrarlo en un alert

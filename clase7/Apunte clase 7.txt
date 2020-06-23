@@ -1,0 +1,41 @@
+Storage : Api para guardar informacion localmente
+	localStorage: Mientras que el browser este instalado se mantiene guardado.
+		escribir: 
+				localStorage.setItem("nombre", "informacion")
+				localStorage.nombre = "informacion";
+		leer: 	
+				localStorage.getItem("nombre")
+				localStorage.nombre
+		borrar: 
+				localStorage.removeItem("nombre")//elimina un item
+				localStorage.clear;// elimina todo lo que este almacenado ahi en este dominio
+				En la consola(Application, dom)
+	sessionStorage: Volatil, cuando se cierra el browser esta informacion se pierde.
+		escribir: 
+				sessionStorage.setItem("nombre", "informacion")
+				sessionStorage.nombre = "informacion";
+		leer: 	
+				sessionStorage.getItem("nombre")
+				sessionStorage.nombre
+		borrar: 
+				sessionStorage.removeItem("nombre") //elimina un item
+				sessionStorage.clear; //elimina todo lo que este almacenado ahi en este dominio
+				En la consola(Application, dom)
+
+Json: // Estructura de datos (Solo datos, no metodos) para intercambiar informacion.
+	archivo.Json definido como:
+	[	
+    {
+        "id" : "valorId",
+        "propiedad" : "valorPropiedad"
+    },
+    {
+        "id" : "valorId",
+        "propiedad" : "valorPropiedad"
+    }
+	]
+	json.parse.online.fr: herramienta para validar
+
+	var StringValue = JSON.stringify(nombreJson) //convierte el json en un string
+	nombreJson = JSON.parse(nombreJson) //convierte el string en un json
+

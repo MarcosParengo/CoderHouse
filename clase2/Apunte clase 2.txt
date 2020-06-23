@@ -1,0 +1,37 @@
+	Operadores de comparacion:
+
+A == B//Si los valores de las variables son iguales devuelve un true, sino un false
+A === B//Si los valores y TIPO de las variables son iguales devuelve un true, sino un false
+A != B // si es desigual devuelve un true, si son iguales un false
+A < B / A > B / A >=  B/ A <= B
+
+-------------------------------------------------------------------------------------------
+
+	Cadena de condiciones
+
+if () {	//primera condicion
+
+} else if(){ //si la primera condicion es falsa, comprueba esta.
+
+} else { //si kas dos anteriores son falsas, se mete en esta.
+
+}
+-------------------------------------------------------------------------------------------
+	
+	Buenas practicas:
+
+-Si una VARIBLE va a ser constante su nombre debe estar en mayúsculas
+-Ambito o scope de la variable (Usar let):
+
+val # = $; // variable disponible en todo el programa (Global). Sea el bloque en el que esta definido que sea.
+
+if () {	
+let * = !; // variable disponible unicamente en este bloque de codigo. Ser global o local esta definido por su posicionamiento.
+}
+
+-------------------------------------------------------------------------------------------
+ 	
+	Operadores de conparacion combinadas:
+
+(A == B && B==A) // si y solo si las dos condiciones son verdaderas, devuelve true
+(A == B || B==A) // si alguna (o todas) condicion es verdadera, devuelve true
