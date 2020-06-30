@@ -1,9 +1,0 @@
-
-Eventos:
-    Con Javascript podemos definir qué es lo que pasa cuando se produce un evento, como podría ser un click en cierto elemento, o escribir en un campo.
-    por ejemplo: <input type="button" value="Buscar" class="btn -primary -block" id="buttonSearch" onclick="onSearchClick()"    
-    Se pueden poner en el html o en el JS con handlers.
-    
-    buttonSearch.addEventListener("click", function mostrarAlert(event){
-        alert(event.target.value);
-    });

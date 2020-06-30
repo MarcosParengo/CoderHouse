@@ -1,0 +1,2 @@
+JQUERY: Libreria para manipular el DOM,
+     controlar eventos, agregar animaciones y ejecutar llamadas AJAX,
