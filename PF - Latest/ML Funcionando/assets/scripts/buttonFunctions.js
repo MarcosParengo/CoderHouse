@@ -7,7 +7,7 @@ buttonCancelSearch.click(function () {
     searchKey.html("");
     txtResult.html("")
     cantResultados.html("")
-    fillContainer(prod);
+    ML("skate");
 })
 
 comprar.click(function () {
@@ -25,30 +25,24 @@ cancelarCompra.click(function deleteCarrito() {
         updateCarritoHTML();
     })
     $("#showHideCarrito").html("( + )") 
-    prod.forEach(function (prod, index) {
-        prod.stock=prod.defaultStock
-    })
-    fillContainer(results);
 })
 
 function AddItemToCart(itemId) {
-    if(!(prod[itemId - 1].stock==0)){
+    if(!productos[itemId].available_quantity==0){
     getCarrito();
-    itemsCarrito = itemsCarrito + "<li>" + prod[itemId - 1].tittle + "</li>";
+    itemsCarrito = itemsCarrito + "<li>" + productos[itemId].title + "</li>";
     cantidadDeItems = parseInt(cantidadDeItems) + 1
-    costo = parseInt(costo) + prod[itemId - 1].price;
+    costo = parseInt(costo) + productos[itemId].price;
     setCarrito();
     updateCarritoHTML();
     updateCarritoHTML();
-    prod[itemId - 1].stock=prod[itemId - 1].stock-1;
-    fillContainer(results);
 }   
 else{
     alert("no quedan mas unidades de "+ prod[itemId - 1].tittle)
 }
 }
 
-function algo(itemId){
+function toggleDetails(itemId){
     if($(`#detail${itemId}`).is(":visible")){
         $(`#detail${itemId}`).hide("slow")
         $(`#detailButton${itemId}`).removeClass("btn -primary")
