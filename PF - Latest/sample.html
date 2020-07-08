@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // Componentes
+        const HomeComponent = {
+            render: () => {
+                return `<section>
+                    <h1>Home</h1>
+                    <p>Texto del inicio</p>
+                    </section>
+                `;
+            }
+        }
+        const Page1Component = {
+            render: () => {
+                return `<section>
+                    <h1>Pagina 1</h1>
+                    <p>Texto para mostrar</p>
+                </section>
+            `;
+            }
+        }    
+        const Page2Component = {
+            render: () => {
+                return `<section>
+                    <h1>Pagina 2</h1>
+                    <p>Texto para mostrar</p>
+                </section>
+            `;
+            }
+        }            
+        const ErrorComponent = {
+            render: () => {
+                return `<p>Error</p>`;
+            }
+        }
+        // Routes 
+        const routes = [
+            { path: '/', component: HomeComponent, },
+            { path: '/page1', component: Page1Component, },
+            { path: '/page2', component: Page2Component, },
+        ];
+        const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
+        const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gm'))) || undefined;        
+        const router = () => {
+            const path = parseLocation(); //Obtiene el hash. Ej #pagina1
+            const { component = ErrorComponent } = findComponentByPath(path, routes) || {}; 
+            $('#app').html(component.render());
+        };
+        $(document).ready(function() {
+            router();
+        });
+        $(window).on( 'hashchange', function( e ) {
+            router();
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#/">Home</a> -
+        <a href="#/page1">Pagina 1</a> -
+        <a href="#/page2">Pagina 2</a>
+    </nav>
+    <section id="app"></section>
+</body>
+</html>
