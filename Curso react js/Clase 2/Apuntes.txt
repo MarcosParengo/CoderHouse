@@ -1,0 +1,43 @@
+-------------------------------------------------- Clase  1 --------------------------------------------------
+Sprit: concatenar
+	const aux = ["marki", "perro", "loco"]
+	const aux2 = [...aux,"algo"]
+Clases:
+	class Auto{
+		constructor(){
+			this.marca="renault"
+		}		
+		arrancar(){
+			alert(this.marca)
+		}
+	}
+
+	let unAuto = new Auto();
+	unAuto.arrancar();
+Concatenar:
+	console.log(`Marki Perro loko ${aux}`)
+	Balores por defecto:
+	const saludar(nombre){
+	console.log(nombre || "marki") // luego de || balor x defecto, si el balor que le entra a la funcion q no sirbe
+	}
+
+-------------------------------------------------- Clase  2 --------------------------------------------------
+
+React tiene muy buena performance, basada en 2 premisas:
+-Trabaja en el dom por nodos y no punto a punto, el dom se actualiza lo menos posible, single page application
+	https://programmingwithmosh.com/react/react-virtual-dom-explained/
+-Tiene un flujo de datos estrictamente unidireccional y bajan por ramas:
+	la app baja datos del server al dom
+	En el dom se disparan eventos y disparan acciones en la app, que pueden poedir informacion o cambiarla.
+
+React Compara el virtual dom con el dom real, si hay alguna diferencia, cambia unicamente en la rama del dom real que esta diferente.
+
+Node JS: Ejecuta el codigo de js en la pc, sin necesidad de un navegador
+NPM: Consola para istalar los modulos,librerias
+
+CLI --> interfaz de lina de comandos
+Unica instruccion del cli de react:
+npx create-react-app nombre-app ----> Crear app
+app/src/app.js---> html app raro no??? --> jsx
+app/src/app.css---> css app
+class html, className jsx

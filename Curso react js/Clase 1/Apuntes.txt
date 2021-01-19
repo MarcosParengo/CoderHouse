@@ -1,0 +1,22 @@
+Sprit: concatenar
+	const aux = ["marki", "perro", "loco"]
+	const aux2 = [...aux,"algo"]
+Clases:
+	class Auto{
+		constructor(){
+			this.marca="renault"
+		}		
+		arrancar(){
+			alert(this.marca)
+		}
+	}
+
+	let unAuto = new Auto();
+	unAuto.arrancar();
+Concatenar:
+	console.log(`Marki Perro loko ${aux}`)
+	Balores por defecto:
+	const saludar(nombre){
+	console.log(nombre || "marki") // luego de || balor x defecto, si el balor que le entra a la funcion q no sirbe
+	}
+
